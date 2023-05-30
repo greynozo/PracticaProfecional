@@ -6,7 +6,7 @@
         <table>
             <tr>
                 <td><asp:Label runat="server" Text="Nombre"></asp:Label></td>
-                <td><asp:TextBox runat="server" ID="txtNombre"></asp:TextBox></td>
+                <%--<td><asp:TextBox runat="server" ID="txtNombre"></asp:TextBox></td>--%>
                 <td> <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNombre" runat="server" Text="*" ErrorMessage="El campo no puede estar vacio" ForeColor="Red"></asp:RequiredFieldValidator></td>
             </tr>
             <tr>
