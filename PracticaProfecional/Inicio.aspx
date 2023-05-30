@@ -6,7 +6,7 @@
         <table>
             <tr>
                 <td><asp:Label runat="server" Text="Nombre"></asp:Label></td>
-                <%--<td><asp:TextBox runat="server" ID="txtNombre"></asp:TextBox></td>--%>
+                <td><asp:TextBox runat="server" ID="txtNombre"></asp:TextBox></td>
                 <td> <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNombre" runat="server" Text="*" ErrorMessage="El campo no puede estar vacio" ForeColor="Red"></asp:RequiredFieldValidator></td>
             </tr>
             <tr>
@@ -15,10 +15,8 @@
                 <td> <asp:RequiredFieldValidator ErrorMessage="El apellido es obligatorio" Text="*" ForeColor="Red" ControlToValidate="txtApellido" runat="server" /> </td>
             </tr>
             <tr>
-                <td><asp:Label runat="server" Text="Edad"></asp:Label></td>
-                <td><asp:TextBox runat="server" ID="txtEdad"></asp:TextBox></td>
-                <td><asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtEdad" ErrorMessage="La edad debe ser mayor a 16" Text="*" MinimumValue="16" MaximumValue="99"></asp:RangeValidator></td>
-                
+                <td><asp:Label runat="server" Text="DNI"></asp:Label></td>
+                <td><asp:TextBox runat="server" ID="txtDNI"></asp:TextBox></td>
             </tr>
             <tr>
                 <td><asp:Label runat="server" Text="Password"></asp:Label></td>
@@ -32,7 +30,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button runat="server" CssClass="btn-success" Text="Enviar" ID="btnEnviar"/>
+                    <asp:Button runat="server" CssClass="btn-success" Text="Enviar" ID="btnEnviar" OnClick="btnEnviar_Click"/>
                     <asp:ValidationSummary ID="ValidationSummary1" ForeColor="Green" runat="server" />
                 </td>
             </tr>
