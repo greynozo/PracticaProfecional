@@ -70,6 +70,7 @@
     <Content Include="Estilos\css\bootstrap.min.css" />
     <Content Include="Estilos\css\bootstrap\mixins\_size.css" />
     <Content Include="Estilos\css\bootstrap\mixins\_table-row.css" />
+    <Content Include="Estilos\css\Login-style.css" />
     <Content Include="Estilos\css\owl.carousel.min.css" />
     <Content Include="Estilos\css\style.css" />
     <Content Include="Estilos\fonts\icomoon\demo-files\demo.css" />
@@ -90,6 +91,7 @@
     <Content Include="Estilos\js\popper.min.js" />
     <Content Include="Inicio.aspx" />
     <Content Include="Inicio2.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Secundario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -108,6 +110,13 @@
     </Compile>
     <Compile Include="Inicio2.aspx.designer.cs">
       <DependentUpon>Inicio2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>

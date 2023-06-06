@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="PracticaProfecional.Inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Sidebar #05</h2>
+       
+        
         <form runat="server">
+             <h2 class="mb-4"> <asp:Label Text="text" runat="server" ID="lblUsuario" /> </h2>
         <table>
             <tr>
                 <td><asp:Label runat="server" Text="Nombre"></asp:Label></td>

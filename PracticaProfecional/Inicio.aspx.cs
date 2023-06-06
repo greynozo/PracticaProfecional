@@ -14,7 +14,13 @@ namespace PracticaProfecional
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                if (Session["Usuario"] == null)
+                    Response.Redirect("Login.aspx");
+            }
 
+            lblUsuario.Text = Session["Usuario"].ToString();
 
         }
 
@@ -23,7 +29,7 @@ namespace PracticaProfecional
             string script = "INSERT INTO TablaAlumno (Nombre, Apellido, DNI) VALUES('" + txtNombre.Text + "','" + txtApellido.Text +
                     "','" + txtDNI.Text + "')";
 
-           bool respuesta = ClaseSQL.EjecutarScript(script);
+            bool respuesta = ClaseSQL.EjecutarScript(script);
 
 
         }
