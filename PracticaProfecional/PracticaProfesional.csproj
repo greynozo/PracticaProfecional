@@ -89,6 +89,7 @@
     <Content Include="Estilos\js\main.js" />
     <Content Include="Estilos\js\owl.carousel.min.js" />
     <Content Include="Estilos\js\popper.min.js" />
+    <Content Include="Global.asax" />
     <Content Include="Inicio.aspx" />
     <Content Include="Inicio2.aspx" />
     <Content Include="Login.aspx" />
@@ -97,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ClaseSQL.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

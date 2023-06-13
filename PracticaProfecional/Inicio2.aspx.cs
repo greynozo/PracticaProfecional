@@ -11,7 +11,8 @@ namespace PracticaProfecional
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           string op1 = Request.QueryString["op1"];
+            string op2 = Request.QueryString["op2"];
         }
     }
 }

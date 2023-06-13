@@ -36,6 +36,11 @@
                     <asp:ValidationSummary ID="ValidationSummary1" ForeColor="Green" runat="server" />
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <asp:Button runat="server" CssClass="btn-success" Text="Datos" ID="btnDatos" OnClick="btnDatos_Click" />
+                </td>
+            </tr>
         </table>    
             </form>
     </div>
