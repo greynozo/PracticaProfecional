@@ -70,7 +70,6 @@
     <Content Include="Estilos\css\bootstrap.min.css" />
     <Content Include="Estilos\css\bootstrap\mixins\_size.css" />
     <Content Include="Estilos\css\bootstrap\mixins\_table-row.css" />
-    <Content Include="Estilos\css\Login-style.css" />
     <Content Include="Estilos\css\owl.carousel.min.css" />
     <Content Include="Estilos\css\style.css" />
     <Content Include="Estilos\fonts\icomoon\demo-files\demo.css" />
@@ -89,11 +88,28 @@
     <Content Include="Estilos\js\main.js" />
     <Content Include="Estilos\js\owl.carousel.min.js" />
     <Content Include="Estilos\js\popper.min.js" />
+    <Content Include="Estilos\Login\css\bootstrap.min.css" />
+    <Content Include="Estilos\Login\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="Estilos\Login\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="Estilos\Login\css\bootstrap\mixins\_transition.css" />
+    <Content Include="Estilos\Login\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="Estilos\Login\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="Estilos\Login\css\bootstrap\_media.css" />
+    <Content Include="Estilos\Login\css\style.css" />
+    <Content Include="Estilos\Login\images\bg-1.jpg" />
+    <Content Include="Estilos\Login\js\bootstrap.min.js" />
+    <Content Include="Estilos\Login\js\jquery.min.js" />
+    <Content Include="Estilos\Login\js\main.js" />
+    <Content Include="Estilos\Login\js\popper.js" />
     <Content Include="Global.asax" />
     <Content Include="Inicio.aspx" />
     <Content Include="Inicio2.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Secundario.aspx" />
+    <Content Include="VistaAcciones.aspx" />
+    <Content Include="VistaWizard.aspx" />
+    <Content Include="Vista.aspx" />
+    <Content Include="VistaCodigo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +152,34 @@
     </Compile>
     <Compile Include="Secundario.aspx.designer.cs">
       <DependentUpon>Secundario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaAcciones.aspx.cs">
+      <DependentUpon>VistaAcciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaAcciones.aspx.designer.cs">
+      <DependentUpon>VistaAcciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaWizard.aspx.cs">
+      <DependentUpon>VistaWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaWizard.aspx.designer.cs">
+      <DependentUpon>VistaWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista.aspx.cs">
+      <DependentUpon>Vista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista.aspx.designer.cs">
+      <DependentUpon>Vista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaCodigo.aspx.cs">
+      <DependentUpon>VistaCodigo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaCodigo.aspx.designer.cs">
+      <DependentUpon>VistaCodigo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -238,6 +282,104 @@
     <Content Include="Estilos\scss\bootstrap\_utilities.scss" />
     <Content Include="Estilos\scss\bootstrap\_variables.scss" />
     <Content Include="Estilos\scss\style.scss" />
+    <Content Include="Estilos\Login\css\.DS_Store" />
+    <Content Include="Estilos\Login\css\bootstrap\.DS_Store" />
+    <Content Include="Estilos\Login\css\bootstrap\mixins\.DS_Store" />
+    <Content Include="Estilos\Login\fonts\.DS_Store" />
+    <Content Include="Estilos\Login\images\.DS_Store" />
+    <Content Include="Estilos\Login\js\.DS_Store" />
+    <Content Include="Estilos\Login\scss\.DS_Store" />
+    <Content Include="Estilos\Login\scss\bootstrap\.DS_Store" />
+    <Content Include="Estilos\Login\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_alert.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_badge.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_button-group.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_buttons.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_card.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_carousel.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_close.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_code.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_forms.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_functions.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_grid.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_images.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_input-group.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_list-group.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_media.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_mixins.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_modal.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_nav.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_navbar.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_pagination.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_popover.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_print.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_progress.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_reboot.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_root.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_spinners.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_tables.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_toasts.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_transitions.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_type.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_utilities.scss" />
+    <Content Include="Estilos\Login\scss\bootstrap\_variables.scss" />
+    <Content Include="Estilos\Login\scss\style.scss" />
     <None Include="packages.config" />
     <Content Include="Principal.Master" />
     <None Include="Web.Debug.config">

@@ -46,14 +46,14 @@
                 <ul>
                     <li class="accordion">
                         <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsible">
-                            <span class="icon-home mr-3"></span>Feed
+                            <span class="icon-home mr-3"></span>Vistas
               </a>
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
                             <div>
                                 <ul>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Sport</a></li>
-                                    <li><a href="#">Health</a></li>
+                                    <li><a href="VistaWizard.aspx">Por Wizard</a></li>
+                                    <li><a href="VistaCodigo.aspx">Por Codigo </a></li>
+                                    <li><a href="VistaAcciones.aspx">Con Acciones</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -74,9 +74,9 @@
                         </div>
 
                     </li>
-                    <li><a href="#"><span class="icon-notifications mr-3"></span>Notifications</a></li>
+                 <%--   <li><a href="#"><span class="icon-notifications mr-3"></span>Notifications</a></li>
                     <li><a href="#"><span class="icon-location-arrow mr-3"></span>Direct</a></li>
-                    <li><a href="#"><span class="icon-pie-chart mr-3"></span>Stats</a></li>
+                    <li><a href="#"><span class="icon-pie-chart mr-3"></span>Stats</a></li>--%>
                     <li><a href="#"><span class="icon-sign-out mr-3"></span>Sign out</a></li>
                 </ul>
             </div>

@@ -30,7 +30,7 @@ namespace PracticaProfecional
                     //builder.UserID = "sa";
                     //builder.Password = "13213";
 
-                    string script = "SELECT EMAIL FROM TablaUsuarios WHERE EMAIL = '" + txtEmail.Text + "' AND" +
+                    string script = "SELECT USUARIO FROM USUARIOS WHERE USUARIO = '" + txtUsuario.Text + "' AND" +
                         " PASS = '" + txtPassword.Text + "'";
 
                     connection.Open();
@@ -46,8 +46,9 @@ namespace PracticaProfecional
 
                     if (filas < 0)
                     {
-                        Session["Usuario"] = txtEmail.Text;
-                        Response.Redirect("Inicio.aspx", false);
+                        Session["Usuario"] = txtUsuario.Text;
+                        Page.Response.Redirect("Inicio.aspx");
+                        //Response.Redirect("Inicio.aspx", true);
                     }
                     //else
                     //    lblError.Text = "Usuario o Password incorrectos.";
@@ -62,5 +63,6 @@ namespace PracticaProfecional
                 }
             }
         }
+
     }
 }

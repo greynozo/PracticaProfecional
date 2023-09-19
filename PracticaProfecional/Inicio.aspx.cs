@@ -16,9 +16,9 @@ namespace PracticaProfecional
         {
             if (!Page.IsPostBack)
             {
-                //string usuario = Session["Usuario"].ToString();
-                
-                if (!string.IsNullOrEmpty(Session["Usuario"]))
+                string usuario = Session["Usuario"].ToString();
+
+                if (String.IsNullOrEmpty(usuario))
                     Response.Redirect("Login.aspx");
             }
 
